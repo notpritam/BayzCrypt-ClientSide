@@ -9,6 +9,7 @@ import { SiJsonwebtokens } from "react-icons/si";
 import { AiOutlineTransaction } from "react-icons/ai";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { BsTelephoneOutbound } from "react-icons/bs";
+import { FaQuoteLeft } from "react-icons/fa";
 import { CiLogout } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
@@ -84,9 +85,16 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link>
+          <Link to='/support'>
             <a className="sd-link">
               <BsTelephoneOutbound /> &nbsp; SUPPORTS
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link>
+            <a className="sd-link">
+              <FaQuoteLeft /> &nbsp; FAQ
             </a>
           </Link>
         </li>

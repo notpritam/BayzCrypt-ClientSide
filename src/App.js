@@ -18,6 +18,7 @@ import { AuthContext } from "./components/context/AuthContext";
 import AuthModal from "./pages/auth/AuthModal";
 import ForgotSuccess from "./pages/auth/ForgotSuccess";
 import RegisterationSuccess from "./pages/auth/RegisterationSuccess";
+import Support from "./components/support/Support";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -50,6 +51,7 @@ function App() {
           <Route path="/users" element={ <UserList/>}/>
           <Route path="/success" element={ <ForgotSuccess/>}/>
           <Route path="/RegSuccess" element={ <RegisterationSuccess/>}/>
+          <Route path="/support" element={ <Support/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

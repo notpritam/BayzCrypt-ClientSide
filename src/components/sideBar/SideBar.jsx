@@ -51,7 +51,7 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link>
+          <Link to='/support'>
             <a className="sd-link">
               <BsTelephoneOutbound /> &nbsp; SUPPORTS
             </a>
