@@ -36,6 +36,18 @@ const Right = () => {
           ""
         )}
         </ul>
+        <ul>
+          <li className="flow-root">
+            <Link
+              to={"/faq"}
+              className=""
+            >
+              <a className="sd-link">
+              <RiAdminFill /> &nbsp; FAQ
+            </a>
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -92,7 +92,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link>
+          <Link to='/faq'>
             <a className="sd-link">
               <FaQuoteLeft /> &nbsp; FAQ
             </a>

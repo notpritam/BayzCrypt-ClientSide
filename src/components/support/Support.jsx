@@ -19,14 +19,14 @@ const Support = () => {
         </p>
 
         <div className='--support-contact'>
-            <h3> <FaPhone/> +234 814-479-6373</h3>
+            <h4> <FaPhone/> +234 814-479-6373</h4>
 
             <h3 > <IoMdMail/> <a href="mailto:bayzcrypt@gmail.com">bayzcrypt@gmail.com</a></h3>
         </div>
 
         <div className='--support-account'>
-            <h1><BsTwitterX/></h1>
-            <h1><FaFacebookF/></h1>
+            <h1><BsTwitterX size={25}/></h1>
+            <h1><FaFacebookF size={25}/></h1>
         </div>
     </div>
   )
