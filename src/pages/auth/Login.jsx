@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./auth.module.scss";
 import Card from "../../components/card/Card";
 import { BiLogIn } from "react-icons/bi";
+import { FaViacoin } from 'react-icons/fa'
 import { useState } from "react";
 import PasswordInput from "../../components/passwordInput/PasswordInput";
 import { useNavigate, Link } from "react-router-dom";
@@ -33,12 +34,16 @@ const Login = () => {
 
   return (
     <div className={`container ${styles.auth}` }>
+      <div className={styles.reg}>
+        <img src="https://gridinternational.com/wp-content/uploads/2023/01/login-animate.gif" alt="" />
+      </div>
       <Card>
         <div className={styles.form}>
           <div className="--flex-center">
-            <BiLogIn size={35} color="#999" />
+            <FaViacoin size={35}/>
           </div>
-          <h2>Login</h2>
+          <h2>Welcome Back!</h2>
+          <p style={{textAlign: 'center', marginBottom: '3rem'}}>Please enter your details</p>
           <div className="--flex-center">
             <button onClick={google} className="--btn --btn-google">Login with Google</button>
           </div>
@@ -46,7 +51,9 @@ const Login = () => {
           <p className="--text-center --fw-bold">or</p>
 
             <form onSubmit={handleSubmit}>
-                <input type="email" placeholder="Email" required name="email"/>
+              <label htmlFor="email">Email Address</label>
+                <input type="email" placeholder="example@gmail.com" required name="email"/>
+                <label htmlFor="password">Password</label>
                 <PasswordInput placeholder="Password" name="password"/>
                 <button type="submit" className="--btn --btn-primary --btn-block">Login</button>
                 {err && <div style={{marginTop: '5px', color: "red", marginBottom: '5px', fontSize: '15px'}}>{err}</div>}

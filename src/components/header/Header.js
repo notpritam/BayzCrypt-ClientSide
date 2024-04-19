@@ -23,7 +23,7 @@ const Header = () => {
           <span>BayzCrypt</span>
         </div>
         <div className='header-nav'>
-          <h1 style={{color: 'white'}}>Innovation</h1>
+          <h1>Wallet</h1>
         </div>
         <div className='header-icon'>
           <FaBars />

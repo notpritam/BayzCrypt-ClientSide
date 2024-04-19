@@ -21,6 +21,8 @@ import RegisterationSuccess from "./pages/auth/RegisterationSuccess";
 import Support from "./components/support/Support";
 import Faq from "./components/faq/Faq";
 import Faqs from "./components/faq/Faqs";
+import State from "./context/data/State";
+
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -34,6 +36,7 @@ function App() {
   };
 
   return (
+    <State>
     <BrowserRouter>
       <Routes>
         <Route path="/">
@@ -58,6 +61,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </State>
   );
 }
 

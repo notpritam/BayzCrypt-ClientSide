@@ -45,7 +45,7 @@ const Forgot = () => {
     <div className={`container ${styles.auth}`}>
       <Card>
         <div className={styles.form}>
-          <h2>Forgot Forgot</h2>
+          <h2>Forgot Password</h2>
           <form onSubmit={(e) => handleSubmit(e)}>
             <input value={restart} onChange={(e) => setRestart(e.target.value)} type="email" placeholder="Input Your Email" required name="email"/>
             <button  type="submit" className="--btn --btn-primary --btn-block">
@@ -63,6 +63,9 @@ const Forgot = () => {
           </form>
         </div>
       </Card>
+      <div className={styles.reg}>
+        <img src="https://assets-v2.lottiefiles.com/a/edcd0080-117c-11ee-b02b-4b29f10e231e/dH1QIMmTe4.gif" alt="" />
+      </div>
     </div>
   )
 }

@@ -4,7 +4,6 @@
     top: 0;
     background-color: green;
     height: 10rem;
-  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +30,7 @@
     }
     .header-nav h1 {
       display: none;
+      color: white;
     }
     .header-icon {
       font-size: 3rem;
