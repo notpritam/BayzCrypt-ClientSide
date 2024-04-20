@@ -5,6 +5,8 @@ import Loader from "../../components/loader/Loader";
 import { useState, useEffect } from "react";
 import Layout from "../../components/layout/Layout";
 import { Link } from "react-router-dom";
+import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,9 +29,9 @@ const Home = () => {
               <h2>BayzCrypt Decentralized Cryptocurrency Wallet</h2>
               <p>Safeguard your crypto with bayzCrypt today !!!</p>
               <p>
-                At BayzCrypt, we have made the user experience more enjoyable by developing 
-                the platform to include GIFs. This enhances the user's experience and makes 
-                using the platform more fun.
+                At BayzCrypt, we've enhanced the user experience more enjoyable by developing 
+                the platform to include GIFs. This addition brings more fun and enjoyment to the 
+                platform, making it more engaging for users.
               </p>
 
               <div className="hero-buttons --flex-start">
@@ -41,7 +43,8 @@ const Home = () => {
               <img src={crytoLogo} alt="loginImg" />
             </div>
             </div>
-          {/* <div>h1</div> */}
+          <div><SectionTwo/></div>
+          <div><SectionThree/></div>
           </section>
           
         </Layout>

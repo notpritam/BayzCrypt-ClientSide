@@ -1,14 +1,62 @@
 import React from "react";
-import "./footer.scss";
+import './footer.css'; // Import the CSS file for styling
 
 const Footer = () => {
   return (
-    <>
-      <hr className="--color-dark" />
-      <div className="--flex-center --py2 --bg-grey footer">
-        <p>All right reserved &copy; 2024</p>
+    <div className="footer">
+      <div className="heade">
+        
+
+        <div className="wave-container">
+          <svg
+            className="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shapeRendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g className="parallax">
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(0, 128, 0, 0.7)"
+              />
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(0, 128, 0, 0.5)"
+              />
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(0, 128, 0, 0.3)"
+              />
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="7"
+                fill="green"
+              />
+            </g>
+          </svg>
+        </div>
+        <div className="headers">
+        <div className="inner-header flex">
+          <h1>FOOTER</h1>
+        </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -8,10 +8,11 @@
   --dark-blue: #0a1930;
   --light-blue: #1f93ff;
 
-  --bg-color: white;
+  /* background-image: linear-gradient(to right top, #16850e, #187d19, #1b7520, #1e6d25, #216529, #3c661e, #516615, #646510, #986513, #cb5c39, #f15373, #fb5fbf); */
+  /* --bg-color: white; */
   --primary-text-color: black;
 
-  --color-white: #fff;
+  /* --color-white: #fff; */
   --color-dark: #333;
 
   --color-grey: #eee;

@@ -201,6 +201,11 @@ const Register = () => {
           </span>
         </div>
       </Card>
+
+      <div className={styles.reg}>
+        <img src="https://assets-v2.lottiefiles.com/a/6beb774c-1166-11ee-a6f1-4788c8724adf/E9TtaYgKZu.gif" alt="" />
+      </div>
+
     </div>
   );
 };
